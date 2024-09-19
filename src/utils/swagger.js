@@ -44,7 +44,7 @@ const options = {
           },
           Member: {
             type: 'object',
-            required: ['name', 'email'],
+            required: ['code', 'name'],
             properties: {
               id: {
                 type: 'string',
