@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+const http = process.env.HTTP || 'http';
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 8000;
 
@@ -17,7 +18,7 @@ const options = {
       },
       servers: [
         {
-          url: `http://${host}:${port}/api/v1`,
+          url: `${http}://${host}:${port}/api/v1`,
         },
       ],
       components: {
