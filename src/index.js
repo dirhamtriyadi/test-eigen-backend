@@ -22,8 +22,10 @@ app.use("/api/v1/book", bookRouter);
 app.use("/api/v1/member", memberRouter);
 app.use("/api/v1/borrow", borrowRouter);
 
-// app.listen(port, () => {
-//   console.log("Server is running");
-// });
+if (process.env.NODE_ENV !== "test") {
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+}
 
 module.exports = app;

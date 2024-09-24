@@ -2,13 +2,8 @@ const request = require("supertest");
 const app = require("../index");
 
 describe("Member API", () => {
-  beforeEach(async() => {
+  beforeEach(async () => {
     // Lakukan sesuatu sebelum test
-  });
-
-  afterEach(async() => {
-    // Lakukan sesuatu setelah test
-    // await app.close();
   });
 
   describe("GET /api/v1/member", () => {
