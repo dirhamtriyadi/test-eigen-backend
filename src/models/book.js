@@ -36,5 +36,12 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'Book',
     
   });
+
+  Book.associate = function(models) {
+    Book.hasMany(models.Borrow, {
+      foreignKey: 'book_id',
+      as: 'borrows'
+    });
+  }
   return Book;
 };

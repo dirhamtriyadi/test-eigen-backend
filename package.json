@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "npx sequelize-cli db:migrate:undo:all --env test && npx sequelize-cli db:migrate --env test && jest --watchAll",
+    "test": "npx sequelize-cli db:migrate:undo:all --env test && npx sequelize-cli db:migrate --env test && jest --watchAll --verbose --coverage --maxWorkers=1",
     "server": "nodemon src/index.js"
   },
   "repository": {
