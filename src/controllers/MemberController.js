@@ -107,7 +107,7 @@ class MemberController {
       // return success response
       return res.status(200).json({
         status: "success",
-        message: "member deleted",
+        message: "Member deleted successfully",
         data: member,
       });
     } catch (error) {

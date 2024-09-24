@@ -25,3 +25,5 @@ app.use("/api/v1/borrow", borrowRouter);
 app.listen(port, () => {
   console.log("Server is running");
 });
+
+module.exports = app;
